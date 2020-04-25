@@ -1,0 +1,163 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Posts on Cheung Jacques&#39;s Blog</title>
+        <link>https://oxygenbyte.github.io.git/posts/</link>
+        <description>Recent content in Posts on Cheung Jacques&#39;s Blog</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+        <lastBuildDate>Thu, 16 Apr 2020 21:19:48 +0800</lastBuildDate>
+        <atom:link href="https://oxygenbyte.github.io.git/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>Principle</title>
+            <link>https://oxygenbyte.github.io.git/posts/2020/04/principle/</link>
+            <pubDate>Thu, 16 Apr 2020 21:19:48 +0800</pubDate>
+            
+            <guid>https://oxygenbyte.github.io.git/posts/2020/04/principle/</guid>
+            <description>学习方法论  重视问题 一个领域最重要，最活跃的东西是问题 独立思考 独立思考是解决问题的关键 主动检索 互联网是宝藏，Internet是最好的老师 重视媒介 书籍文字是最好的学习方式，缺点是慢，好书好文字需要筛选 文档也是一种重要的媒介 图片是一种重要的描述关键内容的媒介 对于学习来说，视频是一种次等的媒介 知识的组织结构和知识内容本身同等重要 良好的知识组织，可以帮助人迅速的掌握知识内容，更可以加深对知识内容的理解 及时记录 好记性不如烂笔头 不断学习 活到老，学到老 敢于折腾 生命在于折腾 学习不能一步到位，要逐环旋进  数学方法论  消元 变形 数学结合 普遍的代价是抽象  编程方法论  状态机 数据结构组织决定算法设计 信息应该充分利用 编程是人利用计算机解决问题，不是计算机解决问题 计算机解决问题的办法就是暴力遍历解空间 递归 缩小问题规模 去掉冗余信息 从集合的角度考虑问题  </description>
+            <content type="html"><![CDATA[<h3 id="学习方法论">学习方法论</h3>
+<ol>
+<li>重视问题
+一个领域最重要，最活跃的东西是问题</li>
+<li>独立思考
+独立思考是解决问题的关键</li>
+<li>主动检索
+互联网是宝藏，Internet是最好的老师</li>
+<li>重视媒介
+书籍文字是最好的学习方式，缺点是慢，好书好文字需要筛选
+文档也是一种重要的媒介
+图片是一种重要的描述关键内容的媒介
+对于学习来说，视频是一种次等的媒介</li>
+<li>知识的组织结构和知识内容本身同等重要
+良好的知识组织，可以帮助人迅速的掌握知识内容，更可以加深对知识内容的理解</li>
+<li>及时记录
+好记性不如烂笔头</li>
+<li>不断学习
+活到老，学到老</li>
+<li>敢于折腾
+生命在于折腾</li>
+<li>学习不能一步到位，要逐环旋进</li>
+</ol>
+<h3 id="数学方法论">数学方法论</h3>
+<ol>
+<li>消元</li>
+<li>变形</li>
+<li>数学结合</li>
+<li>普遍的代价是抽象</li>
+</ol>
+<h3 id="编程方法论">编程方法论</h3>
+<ol>
+<li>状态机</li>
+<li>数据结构组织决定算法设计</li>
+<li>信息应该充分利用</li>
+<li>编程是人利用计算机解决问题，不是计算机解决问题</li>
+<li>计算机解决问题的办法就是暴力遍历解空间</li>
+<li>递归</li>
+<li>缩小问题规模</li>
+<li>去掉冗余信息</li>
+<li>从集合的角度考虑问题</li>
+</ol>
+]]></content>
+        </item>
+        
+        <item>
+            <title>剪绳子问题</title>
+            <link>https://oxygenbyte.github.io.git/posts/2019/04/%E5%89%AA%E7%BB%B3%E5%AD%90%E9%97%AE%E9%A2%98/</link>
+            <pubDate>Fri, 05 Apr 2019 00:00:00 +0000</pubDate>
+            
+            <guid>https://oxygenbyte.github.io.git/posts/2019/04/%E5%89%AA%E7%BB%B3%E5%AD%90%E9%97%AE%E9%A2%98/</guid>
+            <description>题目描述  给你一根长度为n的绳子，请把绳子剪成整数长的m段（m、n都是整数，n&amp;gt;1并且m&amp;gt;1），每段绳子的长度记为k[0],k[1],&amp;hellip;,k[m]。请问k[0]xk[1]x&amp;hellip;xk[m]可能的最大乘积是多少？
+ 例如，当绳子的长度是8时，我们把它剪成长度分别为2、3、3的三段，此时得到的最大乘积是18。
+  题目分析 要让最大乘积最大，则当n &amp;gt; 5时，使用尽可能多的3。
+贪心算法  数学分析  $$ \begin{matrix} if\space x\%3 &amp;amp;numOf2 &amp;amp;numOf3\newline \space\space 0 &amp;amp; 0 &amp;amp; x/3\newline \space\space 1 &amp;amp; 2 &amp;amp; x/3-1\newline \space\space 2 &amp;amp; 1&amp;amp; x/3\newline \end{matrix} $$
+实现代码 public int cutRope2(int target) { if (target &amp;lt; 2) return 0; if (target == 2) return 1; if (target == 3) return 2; int numOf3 = target / 3; int numOf2 = 0; if (target % 3 == 1) { numOf3--; numOf2 = 2; } if(target % 3 == 2){ numOf2 = 1; } // int numOf2 = (target - numOf3*3) / 2;  return (int) (Math.</description>
+            <content type="html"><![CDATA[<h3 id="题目描述">题目描述</h3>
+<blockquote>
+<p>给你一根长度为n的绳子，请把绳子剪成整数长的m段（m、n都是整数，n&gt;1并且m&gt;1），每段绳子的长度记为k[0],k[1],&hellip;,k[m]。请问k[0]xk[1]x&hellip;xk[m]可能的最大乘积是多少？</p>
+<blockquote>
+<p>例如，当绳子的长度是8时，我们把它剪成长度分别为2、3、3的三段，此时得到的最大乘积是18。</p>
+</blockquote>
+</blockquote>
+<h3 id="题目分析">题目分析</h3>
+<p>要让最大乘积最大，则当n &gt; 5时，使用尽可能多的3。</p>
+<h3 id="贪心算法">贪心算法</h3>
+<ul>
+<li>数学分析</li>
+</ul>
+<p>$$
+\begin{matrix}
+if\space x\%3 &amp;numOf2 &amp;numOf3\newline
+\space\space 0 &amp; 0 &amp; x/3\newline
+\space\space 1 &amp; 2 &amp; x/3-1\newline
+\space\space 2 &amp; 1&amp; x/3\newline
+\end{matrix}
+$$</p>
+<h4 id="实现代码">实现代码</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">int</span> <span style="color:#a6e22e">cutRope2</span><span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> target<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>target <span style="color:#f92672">&lt;</span> 2<span style="color:#f92672">)</span>
+        <span style="color:#66d9ef">return</span> 0<span style="color:#f92672">;</span>
+    <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>target <span style="color:#f92672">==</span> 2<span style="color:#f92672">)</span>
+        <span style="color:#66d9ef">return</span> 1<span style="color:#f92672">;</span>
+    <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>target <span style="color:#f92672">==</span> 3<span style="color:#f92672">)</span>
+        <span style="color:#66d9ef">return</span> 2<span style="color:#f92672">;</span>
+
+    <span style="color:#66d9ef">int</span> numOf3 <span style="color:#f92672">=</span> target <span style="color:#f92672">/</span> 3<span style="color:#f92672">;</span>
+    <span style="color:#66d9ef">int</span> numOf2 <span style="color:#f92672">=</span> 0<span style="color:#f92672">;</span>
+    <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>target <span style="color:#f92672">%</span> 3 <span style="color:#f92672">==</span> 1<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        numOf3<span style="color:#f92672">--;</span>
+        numOf2 <span style="color:#f92672">=</span> 2<span style="color:#f92672">;</span>
+    <span style="color:#f92672">}</span>
+    <span style="color:#66d9ef">if</span><span style="color:#f92672">(</span>target <span style="color:#f92672">%</span> 3 <span style="color:#f92672">==</span> 2<span style="color:#f92672">){</span>
+        numOf2 <span style="color:#f92672">=</span> 1<span style="color:#f92672">;</span>
+    <span style="color:#f92672">}</span>
+    <span style="color:#75715e">//  int numOf2 = (target -  numOf3*3) / 2;
+</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">return</span> <span style="color:#f92672">(</span><span style="color:#66d9ef">int</span><span style="color:#f92672">)</span> <span style="color:#f92672">(</span>Math<span style="color:#f92672">.</span><span style="color:#a6e22e">pow</span><span style="color:#f92672">(</span>2<span style="color:#f92672">,</span> numOf2<span style="color:#f92672">)</span> <span style="color:#f92672">*</span> Math<span style="color:#f92672">.</span><span style="color:#a6e22e">pow</span><span style="color:#f92672">(</span>3<span style="color:#f92672">,</span> numOf3<span style="color:#f92672">));</span>
+<span style="color:#f92672">}</span>
+</code></pre></div><h3 id="递推算法">递推算法</h3>
+<h4 id="数学分析">数学分析</h4>
+<p>$$
+f(n)=
+\begin{cases}
+f(n-3), &amp; \text{if $n$ &gt; 6}\newline
+[1,2,4,6],&amp; \text{if n = 2,3,4,5}
+\end{cases}
+$$</p>
+<h4 id="实现代码-1">实现代码</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">int</span> <span style="color:#a6e22e">cutRope</span><span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> target<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">int</span> n <span style="color:#f92672">=</span> 60<span style="color:#f92672">;</span>
+        <span style="color:#66d9ef">int</span><span style="color:#f92672">[]</span> dp <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#66d9ef">int</span><span style="color:#f92672">[</span>n<span style="color:#f92672">+</span>1<span style="color:#f92672">];</span>
+        dp<span style="color:#f92672">[</span>2<span style="color:#f92672">]</span> <span style="color:#f92672">=</span> 1<span style="color:#f92672">;</span>dp<span style="color:#f92672">[</span>3<span style="color:#f92672">]</span> <span style="color:#f92672">=</span> 2<span style="color:#f92672">;</span>
+        dp<span style="color:#f92672">[</span>4<span style="color:#f92672">]</span> <span style="color:#f92672">=</span> 4<span style="color:#f92672">;</span>dp<span style="color:#f92672">[</span>5<span style="color:#f92672">]</span> <span style="color:#f92672">=</span> 6<span style="color:#f92672">;</span>
+        <span style="color:#66d9ef">for</span><span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> 6<span style="color:#f92672">;</span>i <span style="color:#f92672">&lt;=</span> 60<span style="color:#f92672">;</span>i<span style="color:#f92672">++){</span>
+            dp<span style="color:#f92672">[</span>i<span style="color:#f92672">]</span> <span style="color:#f92672">=</span> 3 <span style="color:#f92672">*</span> dp<span style="color:#f92672">[</span>i<span style="color:#f92672">-</span>3<span style="color:#f92672">];</span>
+        <span style="color:#f92672">}</span>
+        <span style="color:#66d9ef">return</span> dp<span style="color:#f92672">[</span>target<span style="color:#f92672">];</span>
+<span style="color:#f92672">}</span>
+</code></pre></div><h3 id="递归算法">递归算法</h3>
+<h4 id="数学分析-1">数学分析</h4>
+<p>$$
+f(n)=
+\begin{cases}
+f(n-3), &amp; \text{if $n$ &gt; 6}\newline
+[1,2,4,6],&amp; \text{if n = 2,3,4,5}
+\end{cases}
+$$</p>
+<h4 id="实现代码-2">实现代码</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span> <span style="color:#f92672">{</span>
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">int</span> <span style="color:#a6e22e">cutRope</span><span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> target<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+            <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>target <span style="color:#f92672">==</span> 2<span style="color:#f92672">)</span>
+                <span style="color:#66d9ef">return</span> 1<span style="color:#f92672">;</span>
+            <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>target <span style="color:#f92672">==</span> 3<span style="color:#f92672">)</span>
+                <span style="color:#66d9ef">return</span> 2<span style="color:#f92672">;</span>
+            <span style="color:#66d9ef">if</span><span style="color:#f92672">(</span>target <span style="color:#f92672">==</span> 4<span style="color:#f92672">)</span>
+                <span style="color:#66d9ef">return</span> 4<span style="color:#f92672">;</span>
+            <span style="color:#66d9ef">if</span><span style="color:#f92672">(</span>target <span style="color:#f92672">==</span> 5<span style="color:#f92672">)</span>
+                <span style="color:#66d9ef">return</span> 6<span style="color:#f92672">;</span>
+            <span style="color:#66d9ef">return</span> cutRope<span style="color:#f92672">(</span>target <span style="color:#f92672">-</span> 3<span style="color:#f92672">)</span> <span style="color:#f92672">*</span> 3<span style="color:#f92672">;</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span>
+</code></pre></div>]]></content>
+        </item>
+        
+    </channel>
+</rss>
